@@ -16,7 +16,7 @@ public class FooBarTest {
             "10,Bar",
             "15,FooBar",
             "30,FooBar"})
-    public void resultShouldBeNumber(int input, String expected) throws Exception {
+    public void resultShouldBeExpectedValue(int input, String expected) throws Exception {
         FooBar fooBar = new FooBar(input);
         Assert.assertEquals(expected, fooBar.getResult());
     }
